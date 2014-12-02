@@ -1,0 +1,5 @@
+function other(){
+	return "hello";
+	
+	
+}
