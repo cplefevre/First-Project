@@ -4,6 +4,9 @@ $light-teal: #E5FCF8;
 $teal: #8BB4AF;
 $red:#9E1130 ;
 $darkred: #3B0612;
-h1 {
-	color:white;
-}
+$notblack: #1e1e1e;
+
+//variables for transition mixin
+$transition-property: all;
+$transition-time: .5s;
+$method: ease;

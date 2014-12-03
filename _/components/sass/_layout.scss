@@ -1,0 +1,163 @@
+body{
+	margin:0;
+	padding:0;
+	background:$notblack
+}
+.container{
+	max-width:1600px;
+	margin:auto;
+	padding:0 2.5%;
+}
+.container-b{
+	max-width:1600px;
+	margin:auto;
+}
+
+header{
+	background:rgba( $notblack, .75 );
+	color:#fff;
+	height:60px;
+	@include clearfix;
+	margin-bottom:-60px;
+	position:relative;
+	z-index:99;
+	h3{
+		float:left;
+		padding-left:2%;
+		font-family:helvetica;
+		font-weight:100;
+		
+	}//header h3
+	nav{
+		width:80%;
+		text-align:right;
+		float:right;
+		ul{	
+			width:100%;
+			list-style-type: none;
+			padding:0;
+			margin:0;
+			height:40px;
+			li{
+			display:inline-block;
+			height:38px;
+			padding: 22px 2% 0 2%;
+			text-align:center;
+			font-family:helvetica;
+			font-weight:bold;
+			font-size:.7em;
+			@include transition-duration(.3s);
+			@include transition-timing-function(ease-in);
+			&:hover{
+				color:$light-teal;
+				background-color:$red;
+				}//hover
+			} //nav ul li
+		} // nav ul
+	}  //nav
+	
+} //header
+
+
+//HERO BEGIN
+#hero{
+	background: url("../images/stools.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position:relative;
+	min-height:450px;
+	img{
+		width:350px;
+		position:absolute;
+		bottom:20px;
+		left:20px;
+		padding-top:80px;
+	}
+}
+
+
+
+
+
+//HERO END
+//VIDEOS BEGIN
+
+.vid{
+	position: relative;
+	width: 50%;
+	display:inline-block;
+	&:before{
+	content: "";
+	display: block;
+	padding-top: 50%;
+	}
+	.vid-cont{
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	}
+}
+#vid1{
+	background: url("../images/cambridge.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#vid2{
+	background: url("../images/jackson.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#vid3{
+	background: url("../images/jackson.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#vid4{
+	background: url("../images/durham.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#vid5{
+	background: url("../images/cambridge.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#vid6{
+	background: url("../images/jackson.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+
+//VIDEOS END
+//ESSAY BEGINS
+.essay{
+	padding:2% 18%;
+	p{
+		color:$light-teal;
+		font-size:16px;
+		line-height:1.65em;
+		font-family:helvetica;
+		padding-bottom:25px;
+		
+	}
+}
+
+//ESSAY ENDS

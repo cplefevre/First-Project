@@ -1,0 +1,8 @@
+@import "compass/css3/transition";
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

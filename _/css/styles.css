@@ -1,4 +1,186 @@
-/* line 7, ../components/sass/_variables.scss */
-h1 {
-  color: white;
+/* line 1, ../components/sass/_layout.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background: #1e1e1e;
+}
+
+/* line 6, ../components/sass/_layout.scss */
+.container {
+  max-width: 1600px;
+  margin: auto;
+  padding: 0 2.5%;
+}
+
+/* line 11, ../components/sass/_layout.scss */
+.container-b {
+  max-width: 1600px;
+  margin: auto;
+}
+
+/* line 16, ../components/sass/_layout.scss */
+header {
+  background: rgba(30, 30, 30, 0.75);
+  color: #fff;
+  height: 60px;
+  margin-bottom: -60px;
+  position: relative;
+  z-index: 99;
+}
+/* line 3, ../components/sass/_mixins.scss */
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 24, ../components/sass/_layout.scss */
+header h3 {
+  float: left;
+  padding-left: 2%;
+  font-family: helvetica;
+  font-weight: 100;
+}
+/* line 31, ../components/sass/_layout.scss */
+header nav {
+  width: 80%;
+  text-align: right;
+  float: right;
+}
+/* line 35, ../components/sass/_layout.scss */
+header nav ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 40px;
+}
+/* line 41, ../components/sass/_layout.scss */
+header nav ul li {
+  display: inline-block;
+  height: 38px;
+  padding: 22px 2% 0 2%;
+  text-align: center;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: .7em;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 51, ../components/sass/_layout.scss */
+header nav ul li:hover {
+  color: #E5FCF8;
+  background-color: #9E1130;
+}
+
+/* line 63, ../components/sass/_layout.scss */
+#hero {
+  background: url("../images/stools.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  min-height: 450px;
+}
+/* line 71, ../components/sass/_layout.scss */
+#hero img {
+  width: 350px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding-top: 80px;
+}
+
+/* line 87, ../components/sass/_layout.scss */
+.vid {
+  position: relative;
+  width: 50%;
+  display: inline-block;
+}
+/* line 91, ../components/sass/_layout.scss */
+.vid:before {
+  content: "";
+  display: block;
+  padding-top: 50%;
+}
+/* line 96, ../components/sass/_layout.scss */
+.vid .vid-cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 104, ../components/sass/_layout.scss */
+#vid1 {
+  background: url("../images/cambridge.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 111, ../components/sass/_layout.scss */
+#vid2 {
+  background: url("../images/jackson.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 118, ../components/sass/_layout.scss */
+#vid3 {
+  background: url("../images/jackson.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 125, ../components/sass/_layout.scss */
+#vid4 {
+  background: url("../images/durham.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 132, ../components/sass/_layout.scss */
+#vid5 {
+  background: url("../images/cambridge.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 139, ../components/sass/_layout.scss */
+#vid6 {
+  background: url("../images/jackson.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 151, ../components/sass/_layout.scss */
+.essay {
+  padding: 2% 18%;
+}
+/* line 153, ../components/sass/_layout.scss */
+.essay p {
+  color: #E5FCF8;
+  font-size: 16px;
+  line-height: 1.65em;
+  font-family: helvetica;
+  padding-bottom: 25px;
 }
