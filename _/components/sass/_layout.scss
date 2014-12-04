@@ -1,20 +1,19 @@
 body{
 	margin:0;
 	padding:0;
+	background:#fff;
 }
 .container{
-	max-width:1600px;
 	margin:auto;
 	padding:0 2.5%;
 }
 .container-b{
-	max-width:1600px;
 	margin:auto;
 }
 
 header{
-	background:rgba( $notblack, .75 );
-	color:#fff;
+	background:rgba( 255,255,255, .75 );
+	color:$notblack;
 	height:60px;
 	@include clearfix;
 	margin-bottom:-60px;
@@ -87,19 +86,38 @@ header{
 	position: relative;
 	width: 50%;
 	display:inline-block;
+	margin-bottom:-3.5px;
 	&:before{
-	content: "";
-	display: block;
-	padding-top: 50%;
+		content: "";
+		display: block;
+		padding-top: 50%;
 	}
 	.vid-cont{
-	position:  absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	}
-}
+		position:  absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		i{
+			font-size:1.3em;
+		}//i
+		.fa-info-circle{
+			position:absolute;
+			bottom:10px;
+			right:10px;
+			color:#fff;
+		}//.fa-info-circle
+		.fa-play-circle{
+			font-size:3.5em;
+			position:absolute;
+			top:50%;
+			left:50%;
+			color:rgba(255,255,255,.5);
+		}//.fa-play-circle
+	}//.vid-cont
+
+}//.vid
+
 #vid1{
 	background: url("../images/cambridge.jpg") no-repeat center center;
 	-webkit-background-size: cover;
@@ -150,7 +168,7 @@ header{
 .essay{
 	padding:2% 18%;
 	p{
-		color:$light-teal;
+		color:$notblack;
 		font-size:16px;
 		line-height:1.65em;
 		font-family:helvetica;
