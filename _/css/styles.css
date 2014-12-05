@@ -1,29 +1,33 @@
 @charset "UTF-8";
 /* line 1, ../components/sass/_layout.scss */
-body {
+html, body {
   margin: 0;
   padding: 0;
   background: #fff;
+  height: 100%;
+  min-height: 100%;
 }
 
-/* line 6, ../components/sass/_layout.scss */
+/* line 8, ../components/sass/_layout.scss */
 .container {
   margin: auto;
   padding: 0 2.5%;
 }
 
-/* line 10, ../components/sass/_layout.scss */
+/* line 12, ../components/sass/_layout.scss */
 .container-b {
   margin: auto;
 }
 
-/* line 14, ../components/sass/_layout.scss */
+/* line 16, ../components/sass/_layout.scss */
 header {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.85);
   color: #1e1e1e;
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: 60px;
   margin-bottom: -60px;
-  position: relative;
   z-index: 99;
 }
 /* line 3, ../components/sass/_mixins.scss */
@@ -32,20 +36,25 @@ header:after {
   display: table;
   clear: both;
 }
-/* line 22, ../components/sass/_layout.scss */
+/* line 26, ../components/sass/_layout.scss */
 header h3 {
   float: left;
   padding-left: 2%;
   font-family: helvetica;
   font-weight: 100;
+  margin-top: 10px;
 }
-/* line 29, ../components/sass/_layout.scss */
+/* line 32, ../components/sass/_layout.scss */
+header h3 img {
+  width: 300px;
+}
+/* line 38, ../components/sass/_layout.scss */
 header nav {
-  width: 80%;
+  width: calc(100% - 400px);
   text-align: right;
   float: right;
 }
-/* line 33, ../components/sass/_layout.scss */
+/* line 42, ../components/sass/_layout.scss */
 header nav ul {
   width: 100%;
   list-style-type: none;
@@ -53,7 +62,7 @@ header nav ul {
   margin: 0;
   height: 40px;
 }
-/* line 39, ../components/sass/_layout.scss */
+/* line 48, ../components/sass/_layout.scss */
 header nav ul li {
   display: inline-block;
   height: 38px;
@@ -71,13 +80,13 @@ header nav ul li {
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 49, ../components/sass/_layout.scss */
+/* line 58, ../components/sass/_layout.scss */
 header nav ul li:hover {
   color: #E5FCF8;
   background-color: #9E1130;
 }
 
-/* line 61, ../components/sass/_layout.scss */
+/* line 70, ../components/sass/_layout.scss */
 #hero {
   background: url("../images/stools.jpg") no-repeat center center;
   -webkit-background-size: cover;
@@ -85,9 +94,9 @@ header nav ul li:hover {
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-  min-height: 450px;
+  height: 100vh;
 }
-/* line 69, ../components/sass/_layout.scss */
+/* line 78, ../components/sass/_layout.scss */
 #hero img {
   width: 350px;
   position: absolute;
@@ -96,20 +105,20 @@ header nav ul li:hover {
   padding-top: 80px;
 }
 
-/* line 85, ../components/sass/_layout.scss */
+/* line 94, ../components/sass/_layout.scss */
 .vid {
   position: relative;
   width: 50%;
   display: inline-block;
   margin-bottom: -3.5px;
 }
-/* line 90, ../components/sass/_layout.scss */
+/* line 99, ../components/sass/_layout.scss */
 .vid:before {
   content: "";
   display: block;
-  padding-top: 50%;
+  padding-top: 56.25%;
 }
-/* line 95, ../components/sass/_layout.scss */
+/* line 104, ../components/sass/_layout.scss */
 .vid .vid-cont {
   position: absolute;
   top: 0;
@@ -117,27 +126,53 @@ header nav ul li:hover {
   bottom: 0;
   right: 0;
 }
-/* line 101, ../components/sass/_layout.scss */
+/* line 110, ../components/sass/_layout.scss */
 .vid .vid-cont i {
   font-size: 1.3em;
 }
-/* line 104, ../components/sass/_layout.scss */
+/* line 113, ../components/sass/_layout.scss */
 .vid .vid-cont .fa-info-circle {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
-  color: #fff;
+  bottom: 20px;
+  right: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 }
-/* line 110, ../components/sass/_layout.scss */
+/* line 120, ../components/sass/_layout.scss */
+.vid .vid-cont .fa-info-circle:hover {
+  transform: scale(1.5);
+  color: white;
+}
+/* line 125, ../components/sass/_layout.scss */
 .vid .vid-cont .fa-play-circle {
   font-size: 3.5em;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   color: rgba(255, 255, 255, 0.5);
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 133, ../components/sass/_layout.scss */
+.vid .vid-cont .fa-play-circle:hover {
+  transform: scale(2);
+  color: white;
 }
 
-/* line 121, ../components/sass/_layout.scss */
+/* line 142, ../components/sass/_layout.scss */
 #vid1 {
   background: url("../images/cambridge.jpg") no-repeat center center;
   -webkit-background-size: cover;
@@ -146,7 +181,7 @@ header nav ul li:hover {
   background-size: cover;
 }
 
-/* line 128, ../components/sass/_layout.scss */
+/* line 149, ../components/sass/_layout.scss */
 #vid2 {
   background: url("../images/jackson.jpg") no-repeat center center;
   -webkit-background-size: cover;
@@ -155,17 +190,8 @@ header nav ul li:hover {
   background-size: cover;
 }
 
-/* line 135, ../components/sass/_layout.scss */
+/* line 156, ../components/sass/_layout.scss */
 #vid3 {
-  background: url("../images/jackson.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-/* line 142, ../components/sass/_layout.scss */
-#vid4 {
   background: url("../images/durham.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -173,8 +199,8 @@ header nav ul li:hover {
   background-size: cover;
 }
 
-/* line 149, ../components/sass/_layout.scss */
-#vid5 {
+/* line 163, ../components/sass/_layout.scss */
+#vid4 {
   background: url("../images/cambridge.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -182,8 +208,8 @@ header nav ul li:hover {
   background-size: cover;
 }
 
-/* line 156, ../components/sass/_layout.scss */
-#vid6 {
+/* line 170, ../components/sass/_layout.scss */
+#vid5 {
   background: url("../images/jackson.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -191,11 +217,29 @@ header nav ul li:hover {
   background-size: cover;
 }
 
-/* line 168, ../components/sass/_layout.scss */
+/* line 177, ../components/sass/_layout.scss */
+#vid6 {
+  background: url("../images/durham.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 184, ../components/sass/_layout.scss */
+.pop-text {
+  color: #1e1e1e;
+  font-size: 16px;
+  line-height: 1.65em;
+  font-family: helvetica;
+  padding: 5%;
+}
+
+/* line 196, ../components/sass/_layout.scss */
 .essay {
   padding: 2% 18%;
 }
-/* line 170, ../components/sass/_layout.scss */
+/* line 198, ../components/sass/_layout.scss */
 .essay p {
   color: #1e1e1e;
   font-size: 16px;
